@@ -1,5 +1,23 @@
-#flexBox {
+body {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+#home {
+    max-width: 700px;
+    min-width: 300px;
+    border: 1px solid red;
+    background-color: slateblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
 
 }
 

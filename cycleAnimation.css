@@ -1,68 +1,106 @@
+body {
+    margin: 0;
+}
+
+a {
+    display: block;
+    margin: 10px 5%;
+    background-color: blue;
+    color: aliceblue;
+    width: 60px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: red;
+    color: aliceblue;
+}
+
+
 #field {
+    /* width: 100%; */
     animation-name: field;
-    animation-duration: 54000s;
-    animation-iteration-count: 3600;
+    animation-duration: 40s;
+    animation-iteration-count: 100000000000000;
 }
 
 @keyframes field {
-    from {
+    0% {
         background-size: cover;
         margin: 0;
-        background-image: url('./images/bash.png');
+        background-image: url('./images/bash5.png');
     }
 
-    50% {
+    25% {
         background-size: cover;
         margin: 0;
         background-image: url('./images/bash2.png');
     }
 
-    to {
+    50% {
+        background-size: cover;
+        margin: 0;
+        background-image: url('./images/bash7.png');
+    }
+
+    75% {
         background-size: cover;
         margin: 0;
         background-image: url('./images/bash3.png');
     }
 
+    100% {
+        background-size: cover;
+        margin: 0;
+        background-image: url('./images/bash6.png');
+    }
+
 }
 
 #sky {
-    height: 560px;
     width: 100%;
-    background-image: linear-gradient(blue, rgb(50, 50, 247), rgb(251, 173, 173), white);
-
+    position: absolute;
+    background-image: linear-gradient(rgb(135, 135, 255), rgb(50, 50, 247), rgb(251, 173, 173), white);
     margin: 0;
     animation-name: sky;
-    animation-duration: 10s;
-    animation-iteration-count: 5;
+    animation-duration: 20s;
+    animation-iteration-count: 100000000000000;
+    animation-timing-function: linear;
 }
 
 @keyframes sky {
     0% {
         width: 100%;
-        background-image: linear-gradient(blue, rgb(50, 50, 247), rgb(251, 173, 173), white);
+        margin-left: 100%;
+        background-image: linear-gradient(white, rgb(167, 167, 250), rgb(50, 50, 247), rgb(251, 173, 173), white);
         margin: 0;
     }
 
     25% {
         width: 100%;
+        margin-left: 75%;
         background-image: linear-gradient(rgb(167, 167, 250), rgb(83, 83, 254), rgb(251, 173, 180), white);
         margin: 0;
     }
 
     50% {
         width: 100%;
-        background-image: linear-gradient(blue, rgb(122, 122, 131), rgb(246, 206, 206), white);
+        margin-left: 50%;
+        background-image: linear-gradient(rgb(167, 167, 250), blue, rgb(122, 122, 131), rgb(246, 206, 206), white);
         margin: 0;
     }
 
     75% {
         width: 100%;
+        margin-left: 25%;
         background-image: linear-gradient(rgb(251, 251, 253), rgb(50, 50, 247), rgb(25, 173, 173), white);
         margin: 0;
     }
 
     100% {
         width: 100%;
+        margin-left: 0%;
         background-image: linear-gradient(rgb(189, 189, 192), rgb(50, 50, 247), rgb(50, 50, 247), white);
         margin: 0;
     }
@@ -74,10 +112,11 @@
 }
 
 #cycle {
+    position: relative;
     height: 240px;
     animation-name: cycle;
-    animation-duration: 10s;
-    animation-iteration-count: 30;
+    animation-duration: 5s;
+    animation-iteration-count: 200000000000000;
     animation-timing-function: linear;
 }
 
@@ -97,24 +136,29 @@
 }
 
 #road {
-    height: 50px;
+    position: relative;
+    height: 30px;
     background-image: linear-gradient(gray, rgb(16, 16, 16), rgb(40, 40, 40), rgb(12, 11, 11), grey);
 }
 
 /* fo9r4 mobile */
 @media only screen and (max-width: 700px) {
-    #field {
+    body {
+        margin: 0;
+    }
 
+    #field {
+        /* width: 100%; */
         animation-name: field;
-        animation-duration: 54000s;
-        animation-iteration-count: 3600;
+        animation-duration: 20s;
+        animation-iteration-count: 100000000000000;
     }
 
     @keyframes field {
         0% {
             background-size: cover;
             margin: 0;
-            background-image: url('./images/bash.png');
+            background-image: url('./images/bash5.png');
         }
 
         25% {
@@ -126,31 +170,34 @@
         50% {
             background-size: cover;
             margin: 0;
-            background-image: url('./images/bash3.png');
+            background-image: url('./images/bash7.png');
         }
 
         75% {
             background-size: cover;
             margin: 0;
-            background-image: url('./images/bash1.png');
+            background-image: url('./images/bash3.png');
         }
 
         100% {
             background-size: cover;
             margin: 0;
-            background-image: url('./images/bash3.png');
+            background-image: url('./images/bash6.png');
         }
+
     }
 
     #sky {
-        height: 560px;
+        /* height: 460px; */
+        position: absolute;
         width: 100%;
         background-image: linear-gradient(blue, rgb(50, 50, 247), rgb(251, 173, 173), white);
 
         margin: 0;
         animation-name: sky;
-        animation-duration: 10s;
-        animation-iteration-count: 5;
+        animation-duration: 5s;
+        animation-iteration-count: 100000000000000;
+        animation-timing-function: linear;
     }
 
     @keyframes sky {
@@ -187,14 +234,15 @@
     }
 
     #blankSpace {
-        height: 300px;
+        height: 220px;
     }
 
     #cycle {
+        position: relative;
         height: 240px;
         animation-name: cycle;
-        animation-duration: 10s;
-        animation-iteration-count: 30;
+        animation-duration: 2.5s;
+        animation-iteration-count: 200000000000000;
         animation-timing-function: linear;
     }
 
@@ -214,7 +262,8 @@
     }
 
     #road {
-        height: 50px;
+        position: relative;
+        height: 20px;
         background-image: linear-gradient(gray, rgb(16, 16, 16), rgb(40, 40, 40), rgb(12, 11, 11), grey);
     }
 }
