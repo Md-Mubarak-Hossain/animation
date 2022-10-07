@@ -1,0 +1,220 @@
+#field {
+    animation-name: field;
+    animation-duration: 54000s;
+    animation-iteration-count: 3600;
+}
+
+@keyframes field {
+    from {
+        background-size: cover;
+        margin: 0;
+        background-image: url('./images/bash.png');
+    }
+
+    50% {
+        background-size: cover;
+        margin: 0;
+        background-image: url('./images/bash2.png');
+    }
+
+    to {
+        background-size: cover;
+        margin: 0;
+        background-image: url('./images/bash3.png');
+    }
+
+}
+
+#sky {
+    height: 560px;
+    width: 100%;
+    background-image: linear-gradient(blue, rgb(50, 50, 247), rgb(251, 173, 173), white);
+
+    margin: 0;
+    animation-name: sky;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+}
+
+@keyframes sky {
+    0% {
+        width: 100%;
+        background-image: linear-gradient(blue, rgb(50, 50, 247), rgb(251, 173, 173), white);
+        margin: 0;
+    }
+
+    25% {
+        width: 100%;
+        background-image: linear-gradient(rgb(167, 167, 250), rgb(83, 83, 254), rgb(251, 173, 180), white);
+        margin: 0;
+    }
+
+    50% {
+        width: 100%;
+        background-image: linear-gradient(blue, rgb(122, 122, 131), rgb(246, 206, 206), white);
+        margin: 0;
+    }
+
+    75% {
+        width: 100%;
+        background-image: linear-gradient(rgb(251, 251, 253), rgb(50, 50, 247), rgb(25, 173, 173), white);
+        margin: 0;
+    }
+
+    100% {
+        width: 100%;
+        background-image: linear-gradient(rgb(189, 189, 192), rgb(50, 50, 247), rgb(50, 50, 247), white);
+        margin: 0;
+    }
+
+}
+
+#blankSpace {
+    height: 300px;
+}
+
+#cycle {
+    height: 240px;
+    animation-name: cycle;
+    animation-duration: 10s;
+    animation-iteration-count: 30;
+    animation-timing-function: linear;
+}
+
+@keyframes cycle {
+    from {
+        margin-left: 0%;
+        background-repeat: no-repeat;
+        background-image: url('./images/rsz_cycle.png');
+    }
+
+
+    to {
+        margin-left: 100%;
+        background-repeat: no-repeat;
+        background-image: url('./images/rsz_cycle.png');
+    }
+}
+
+#road {
+    height: 50px;
+    background-image: linear-gradient(gray, rgb(16, 16, 16), rgb(40, 40, 40), rgb(12, 11, 11), grey);
+}
+
+/* fo9r4 mobile */
+@media only screen and (max-width: 700px) {
+    #field {
+
+        animation-name: field;
+        animation-duration: 54000s;
+        animation-iteration-count: 3600;
+    }
+
+    @keyframes field {
+        0% {
+            background-size: cover;
+            margin: 0;
+            background-image: url('./images/bash.png');
+        }
+
+        25% {
+            background-size: cover;
+            margin: 0;
+            background-image: url('./images/bash2.png');
+        }
+
+        50% {
+            background-size: cover;
+            margin: 0;
+            background-image: url('./images/bash3.png');
+        }
+
+        75% {
+            background-size: cover;
+            margin: 0;
+            background-image: url('./images/bash1.png');
+        }
+
+        100% {
+            background-size: cover;
+            margin: 0;
+            background-image: url('./images/bash3.png');
+        }
+    }
+
+    #sky {
+        height: 560px;
+        width: 100%;
+        background-image: linear-gradient(blue, rgb(50, 50, 247), rgb(251, 173, 173), white);
+
+        margin: 0;
+        animation-name: sky;
+        animation-duration: 10s;
+        animation-iteration-count: 5;
+    }
+
+    @keyframes sky {
+        0% {
+            width: 100%;
+            background-image: linear-gradient(blue, rgb(50, 50, 247), rgb(251, 173, 173), white);
+            margin: 0;
+        }
+
+        25% {
+            width: 100%;
+            background-image: linear-gradient(rgb(167, 167, 250), rgb(83, 83, 254), rgb(251, 173, 180), white);
+            margin: 0;
+        }
+
+        50% {
+            width: 100%;
+            background-image: linear-gradient(blue, rgb(122, 122, 131), rgb(246, 206, 206), white);
+            margin: 0;
+        }
+
+        75% {
+            width: 100%;
+            background-image: linear-gradient(rgb(251, 251, 253), rgb(50, 50, 247), rgb(25, 173, 173), white);
+            margin: 0;
+        }
+
+        100% {
+            width: 100%;
+            background-image: linear-gradient(rgb(189, 189, 192), rgb(50, 50, 247), rgb(50, 50, 247), white);
+            margin: 0;
+        }
+
+    }
+
+    #blankSpace {
+        height: 300px;
+    }
+
+    #cycle {
+        height: 240px;
+        animation-name: cycle;
+        animation-duration: 10s;
+        animation-iteration-count: 30;
+        animation-timing-function: linear;
+    }
+
+    @keyframes cycle {
+        from {
+            margin-left: 0%;
+            background-repeat: no-repeat;
+            background-image: url('./images/rsz_cycle.png');
+        }
+
+
+        to {
+            margin-left: 100%;
+            background-repeat: no-repeat;
+            background-image: url('./images/rsz_cycle.png');
+        }
+    }
+
+    #road {
+        height: 50px;
+        background-image: linear-gradient(gray, rgb(16, 16, 16), rgb(40, 40, 40), rgb(12, 11, 11), grey);
+    }
+}
